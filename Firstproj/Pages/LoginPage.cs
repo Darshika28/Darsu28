@@ -10,10 +10,7 @@ namespace Firstproj.Pages
         // Input and login in Portal up
         public void loginStep(IWebDriver driver)
         {
-           
-
             // Launch Portal
-
             driver.Navigate().GoToUrl("http://horse-dev.azurewebsites.net/Account/Login?ReturnUrl=%2f");
 
             // Maximize the browser

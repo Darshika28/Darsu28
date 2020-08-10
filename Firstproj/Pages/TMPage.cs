@@ -16,11 +16,14 @@ namespace Firstproj.Pages
             createbtn.Click();
             Thread.Sleep(1000);
 
-            // validating of Creating new time and Material Record
+            // validation of Creating new time and Material Record
+
+            //Find and click on type code dropdown list
             IWebElement dropdow = driver.FindElement(By.XPath("//*[@id='TimeMaterialEditForm']/div/div[1]/div/span[1]/span/span[1]"));
             dropdow.Click();
             Thread.Sleep(1000);
 
+            //Click on Time from dropdown list
             IWebElement time = driver.FindElement(By.XPath("//*[@id='TypeCode_listbox']/li[2]"));
             time.Click();
             Thread.Sleep(1000);
@@ -30,28 +33,29 @@ namespace Firstproj.Pages
             code.SendKeys("9988");
             Thread.Sleep(1000);
 
+            //Find and input description
             IWebElement des = driver.FindElement(By.Id("Description"));
             des.SendKeys("Is a QA");
             Thread.Sleep(1000);
 
+            //Find and input Price per unit
             IWebElement priceperunit = driver.FindElement(By.XPath("//*[@id='TimeMaterialEditForm']/div/div[4]/div/span[1]/span/input[1]"));
             priceperunit.Click();
             IWebElement priceunit = driver.FindElement(By.Id("Price"));
             priceunit.SendKeys("55");
             Thread.Sleep(1000);
 
-            // Find and click save button
+            //Find and click save button
             IWebElement save = driver.FindElement(By.XPath("//*[@id='SaveButton']"));
             save.Click();
-
             Thread.Sleep(3000);
 
-            // Find and click last page
+            //Find and click last page
             IWebElement lastpg = driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[4]/a[4]"));
             lastpg.Click();
             Thread.Sleep(1000);
 
-            // Check record is in list
+            //Check record is in list
             IWebElement lastrec = driver.FindElement(By.XPath(".//*[@id='tmsGrid']/div[3]/table/tbody/tr[last()]/td[1]"));
             Console.WriteLine(lastrec.Text);
             if (lastrec.Text == "9988")
@@ -71,16 +75,19 @@ namespace Firstproj.Pages
             IWebElement editbtn = driver.FindElement(By.XPath(".//*[@id='tmsGrid']/div[3]/table/tbody/tr[last()]/td[5]/a[1]"));
             editbtn.Click();
 
+            //Find and input Code 
             IWebElement editcode = driver.FindElement(By.Id("Code"));
             editcode.Clear();
             editcode.SendKeys("7777");
             Thread.Sleep(1000);
 
+            //Find and input Description
             IWebElement editdes = driver.FindElement(By.Id("Description"));
             editdes.Clear();
             editdes.SendKeys("Qaulity Assurance");
             Thread.Sleep(1000);
 
+            // Find and input Price per unit
             IWebElement edipri = driver.FindElement(By.XPath("//*[@id='TimeMaterialEditForm']/div/div[4]/div/span[1]/span/input[1]"));
             edipri.Click();
             IWebElement editprice = driver.FindElement(By.XPath("//*[@id='Price']"));
@@ -92,7 +99,6 @@ namespace Firstproj.Pages
             // Find and click save button after edit record
             IWebElement editsave = driver.FindElement(By.XPath("//*[@id='SaveButton']"));
             editsave.Click();
-
             Thread.Sleep(3000);
 
             // Find and click last page
