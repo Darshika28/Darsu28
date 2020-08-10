@@ -1,0 +1,17 @@
+D:\Darshika\Firstproj\Firstproj\Firstproj\bin\Debug\netcoreapp3.1\Firstproj.exe
+D:\Darshika\Firstproj\Firstproj\Firstproj\obj\Debug\netcoreapp3.1\Firstproj.csprojAssemblyReference.cache
+D:\Darshika\Firstproj\Firstproj\Firstproj\obj\Debug\netcoreapp3.1\Firstproj.AssemblyInfoInputs.cache
+D:\Darshika\Firstproj\Firstproj\Firstproj\obj\Debug\netcoreapp3.1\Firstproj.AssemblyInfo.cs
+D:\Darshika\Firstproj\Firstproj\Firstproj\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Darshika\Firstproj\Firstproj\Firstproj\bin\Debug\netcoreapp3.1\WebDriver.dll
+D:\Darshika\Firstproj\Firstproj\Firstproj\obj\Debug\netcoreapp3.1\Firstproj.csproj.CopyComplete
+D:\Darshika\Firstproj\Firstproj\Firstproj\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
+D:\Darshika\Firstproj\Firstproj\Firstproj\obj\Debug\netcoreapp3.1\Firstproj.csproj.CoreCompileInputs.cache
+D:\Darshika\Firstproj\Firstproj\Firstproj\bin\Debug\netcoreapp3.1\Firstproj.deps.json
+D:\Darshika\Firstproj\Firstproj\Firstproj\bin\Debug\netcoreapp3.1\Firstproj.runtimeconfig.json
+D:\Darshika\Firstproj\Firstproj\Firstproj\bin\Debug\netcoreapp3.1\Firstproj.runtimeconfig.dev.json
+D:\Darshika\Firstproj\Firstproj\Firstproj\bin\Debug\netcoreapp3.1\Firstproj.dll
+D:\Darshika\Firstproj\Firstproj\Firstproj\bin\Debug\netcoreapp3.1\Firstproj.pdb
+D:\Darshika\Firstproj\Firstproj\Firstproj\obj\Debug\netcoreapp3.1\Firstproj.dll
+D:\Darshika\Firstproj\Firstproj\Firstproj\obj\Debug\netcoreapp3.1\Firstproj.pdb
+D:\Darshika\Firstproj\Firstproj\Firstproj\obj\Debug\netcoreapp3.1\Firstproj.genruntimeconfig.cache
