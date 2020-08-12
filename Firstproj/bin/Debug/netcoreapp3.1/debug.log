@@ -307,3 +307,15 @@
 [0811/111321.183:ERROR:exception_snapshot_win.cc(98)] thread ID 25760 not found in process
 [0811/111321.251:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
 [0811/111321.251:ERROR:exception_snapshot_win.cc(98)] thread ID 10740 not found in process
+[0811/182816.539:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0811/182816.541:ERROR:exception_snapshot_win.cc(98)] thread ID 34300 not found in process
+[0811/182816.601:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0811/182816.601:ERROR:exception_snapshot_win.cc(98)] thread ID 8436 not found in process
+[0811/183056.098:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0811/183056.099:ERROR:exception_snapshot_win.cc(98)] thread ID 38760 not found in process
+[0811/183056.164:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0811/183056.164:ERROR:exception_snapshot_win.cc(98)] thread ID 35432 not found in process
+[0811/183847.809:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0811/183847.810:ERROR:exception_snapshot_win.cc(98)] thread ID 38020 not found in process
+[0811/183847.875:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0811/183847.875:ERROR:exception_snapshot_win.cc(98)] thread ID 35112 not found in process

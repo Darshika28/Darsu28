@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -33,13 +34,14 @@ namespace Firstproj.Pages
 
             if (helloHari.Text == "Hello hari!")
             {
-                Console.WriteLine("Logged in Successfully");
+                Assert.Pass("Logged in Successfully");
             }
             else
             {
-                Console.WriteLine("Login Failed");
+                Assert.Fail("Login Fail");
             }
 
+          //  Assert.That(helloHari.Text, Is.EqualTo("Hello hari!"));
         }
     }
 }
