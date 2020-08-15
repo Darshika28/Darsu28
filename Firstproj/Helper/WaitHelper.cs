@@ -16,19 +16,19 @@ namespace Firstproj.Helper
             {
                 if (attribute == "Id")
                 {
-                    var wait = new WebDriverWait(driver, TimeSpan.FromMilliseconds(seconds));
+                    var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(seconds));
                     wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.Id(value)));
 
                 }
                 if (attribute == "XPath")
                 {
-                   WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromMilliseconds(seconds));
+                   WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(seconds));
                    wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.XPath(value)));
 
                 }
                 if (attribute == "CSSSelector")
                 {
-                    var wait = new WebDriverWait(driver, new TimeSpan(0, 0, seconds));
+                    var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(seconds));
                     wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.CssSelector(value)));
                      
                 }
@@ -46,7 +46,7 @@ namespace Firstproj.Helper
             {
                 if (attribute == "Id")
                 {
-                    var wait = new WebDriverWait(driver, new TimeSpan(0, 0, seconds));
+                    var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(seconds));
                     wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.Id(value)));
                 }
                 if (attribute == "XPath")
@@ -56,7 +56,7 @@ namespace Firstproj.Helper
                 }
                 if (attribute == "CSSSelector")
                 {
-                    var wait = new WebDriverWait(driver, new TimeSpan(0, 0, seconds));
+                    var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(seconds));
                     wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.CssSelector(value)));
                 }
 

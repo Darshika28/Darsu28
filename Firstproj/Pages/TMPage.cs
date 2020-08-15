@@ -55,7 +55,7 @@ namespace Firstproj.Pages
             homeObj.ClickOnSave(driver);
 
          //   WaitHelper.WaitExists(driver, "XPath", "//*[@id='tmsGrid']/div[4]/a[4]", 5);
-            WaitHelper.WaitClickable(driver, "XPath", "//*[@id='tmsGrid']/div[4]/a[4]", 5000);
+            WaitHelper.WaitClickable(driver, "XPath", "//*[@id='tmsGrid']/div[4]/a[4]", 5);
             
 
            // Thread.Sleep(3000);
