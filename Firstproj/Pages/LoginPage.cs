@@ -32,15 +32,6 @@ namespace Firstproj.Pages
             //Find hello hari hyperlink
             IWebElement helloHari = driver.FindElement(By.XPath("//*[@id='logoutForm']/ul/li/a"));
 
-            if (helloHari.Text == "Hello hari!")
-            {
-                Assert.Pass("Logged in Successfully");
-            }
-            else
-            {
-                Assert.Fail("Login Fail");
-            }
-
           //  Assert.That(helloHari.Text, Is.EqualTo("Hello hari!"));
         }
     }

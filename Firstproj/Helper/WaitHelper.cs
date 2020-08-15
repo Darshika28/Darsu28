@@ -9,65 +9,63 @@ namespace Firstproj.Helper
 {
     class WaitHelper
     {
-        private static int seconds;
-
-        //function for wait
-        public static void WaitClickable(IWebDriver driver, string attribute, string value, int second)
+        // generic function to wait for an element to be clickable
+        public static void WaitClickable(IWebDriver driver, string attribute, string value, int seconds)
         {
             try
             {
                 if (attribute == "Id")
                 {
-                    var wait = new WebDriverWait(driver, new TimeSpan(0, 0, 5));
+                    var wait = new WebDriverWait(driver, TimeSpan.FromMilliseconds(seconds));
                     wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.Id(value)));
 
                 }
                 if (attribute == "XPath")
                 {
-                    var wait = new WebDriverWait(driver, new TimeSpan(0, 0, 5));
-                    wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.XPath(value)));
+                   WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromMilliseconds(seconds));
+                   wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.XPath(value)));
 
                 }
                 if (attribute == "CSSSelector")
                 {
-                    var wait = new WebDriverWait(driver, new TimeSpan(0, 0, 5));
+                    var wait = new WebDriverWait(driver, new TimeSpan(0, 0, seconds));
                     wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.CssSelector(value)));
-
+                     
                 }
-                
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Assert.Fail("Unable to click web element", ex.Message);
             }
         }
 
-        public static void WaitExists(IWebDriver driver, string attribute, string value, int second)
+        public static void WaitExists(IWebDriver driver, string attribute, string value, int seconds)
         {
             try
             {
-                if(attribute == "Id")
+                if (attribute == "Id")
                 {
                     var wait = new WebDriverWait(driver, new TimeSpan(0, 0, seconds));
                     wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.Id(value)));
                 }
-                if(attribute == "XPath")
+                if (attribute == "XPath")
                 {
-                    var wait = new WebDriverWait(driver, new TimeSpan(0, 0, seconds));
+                    var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(seconds));
                     wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath(value)));
                 }
                 if (attribute == "CSSSelector")
                 {
                     var wait = new WebDriverWait(driver, new TimeSpan(0, 0, seconds));
                     wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.CssSelector(value)));
-                } 
-                  
+                }
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Assert.Fail("Couldn't Find Element", ex.Message);
             }
         }
-     
+
     }
 }

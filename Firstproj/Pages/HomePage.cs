@@ -37,5 +37,27 @@ namespace Firstproj.Pages
             Thread.Sleep(1000);
         }
 
+        //Find and Click on create button
+
+        public void ClickOnCreate(IWebDriver driver)
+        {
+            IWebElement createbtn = driver.FindElement(By.XPath("//*[@id='container']/p/a"));
+            createbtn.Click();
+        }
+
+        //Find and Click on Save Button
+        public void ClickOnSave(IWebDriver driver)
+        {
+            IWebElement save = driver.FindElement(By.XPath("//*[@id='SaveButton']"));
+            save.Click();
+        }
+
+        //Function of finding and click on last page
+        public void LastPage(IWebDriver driver)
+        {
+            IWebElement lastpg = driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[4]/a[4]"));
+            lastpg.Click();
+        }
+
     }
 }
